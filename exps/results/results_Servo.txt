@@ -1,0 +1,31 @@
+Best hyperparameters for BoostingElementaryPredicates on Servo: {'num_iter': 533, 'max_cov': 500, 'm': 20, 'learning_rate': 0.5}BoostingElementaryPredicates Results:
+Train RMSE: 0.1846060184126616
+Test RMSE: 0.38659078022719245
+Train R2: 0.9858472781948145
+Test R2: 0.9441651470605739
+-----------------------------------
+Best hyperparameters for LightGBM on Servo: {'num_leaves': 10, 'max_depth': 3, 'learning_rate': 0.1}LightGBM Results:
+Train RMSE: 0.5398793745753584
+Test RMSE: 0.6598611401193397
+Train R2: 0.8789564280285196
+Test R2: 0.8373299882471299
+-----------------------------------
+Best hyperparameters for CatBoost on Servo: {'score_function': 'Cosine', 'learning_rate': 0.1, 'grow_policy': 'Depthwise', 'depth': 10}CatBoost Results:
+Train RMSE: 4.9982440641785084e-08
+Test RMSE: 0.4945833440341578
+Train R2: 0.999999999999999
+Test R2: 0.9086136429817739
+-----------------------------------
+Best hyperparameters for GBRegressor on Servo: {'n_estimators': 50, 'max_depth': 3}GBRegressor Results:
+Train RMSE: 0.24449674869308155
+Test RMSE: 0.7217226173560455
+Train R2: 0.9751747039973401
+Test R2: 0.8053999162834871
+-----------------------------------
+
+Summary Results:
+Dataset                        Model   Train RMSE  Test RMSE  Train R2  Test R2
+  Servo BoostingElementaryPredicates 1.846060e-01   0.386591  0.985847 0.944165
+  Servo                     LightGBM 5.398794e-01   0.659861  0.878956 0.837330
+  Servo                     CatBoost 4.998244e-08   0.494583  1.000000 0.908614
+  Servo                  GBRegressor 2.444967e-01   0.721723  0.975175 0.805400

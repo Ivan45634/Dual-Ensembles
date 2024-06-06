@@ -1,0 +1,27 @@
+Best hyperparameters for BoostingElementaryPredicates on Auto_MPG: {'num_iter': 600, 'max_cov': 500, 'm': 3, 'learning_rate': 0.1}
+BoostingElementaryPredicates Results:
+Train/Test RMSE: 2.863 ± 1.511
+Train/Test R2: 0.806 ± 0.216
+-----------------------------------
+Best hyperparameters for LightGBM on Auto_MPG: {'num_leaves': 10, 'max_depth': 5, 'learning_rate': 0.1}
+LightGBM Results:
+Train/Test RMSE: 7.585 ± 0.718
+Train/Test R2: -0.060 ± 0.035
+-----------------------------------
+Best hyperparameters for CatBoost on Auto_MPG: {'score_function': 'Cosine', 'learning_rate': 0.1, 'grow_policy': 'SymmetricTree', 'depth': 9}
+CatBoost Results:
+Train/Test RMSE: 3.082 ± 1.216
+Train/Test R2: 0.800 ± 0.165
+-----------------------------------
+Best hyperparameters for GBRegressor on Auto_MPG: {'n_estimators': 50, 'max_depth': 3}
+GBRegressor Results:
+Train/Test RMSE: 3.292 ± 1.049
+Train/Test R2: 0.768 ± 0.136
+-----------------------------------
+
+Summary Results:
+ Dataset                        Model RMSE (mean ± std) R2 (mean ± std)
+Auto_MPG BoostingElementaryPredicates    2.863 +- 1.511  0.806 +- 0.216
+Auto_MPG                     LightGBM    7.585 +- 0.718 -0.060 +- 0.035
+Auto_MPG                     CatBoost    3.082 +- 1.216  0.800 +- 0.165
+Auto_MPG                  GBRegressor    3.292 +- 1.049  0.768 +- 0.136

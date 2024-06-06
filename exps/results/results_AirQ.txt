@@ -1,0 +1,17 @@
+Best hyperparameters for BoostingElementaryPredicates on Air Quality: {'num_iter': 525, 'max_cov': 500, 'm': 15, 'learning_rate': 0.5}
+
+--Train RMSE for BoostingElementaryPredicates on Air Quality--
+4.585178388026949
+--Test RMSE for BoostingElementaryPredicates on Air Quality--
+5.280915311145963
+
+--Train R2 for BoostingElementaryPredicates on Air Quality--
+0.9919958156076598
+--Test R2 for BoostingElementaryPredicates on Air Quality--
+0.9900586860221027
+
+Dataset                         Model  ...  Train R2   Test R2
+0  Air Quality  BoostingElementaryPredicates  ...  0.992195  0.990340
+1  Air Quality                      LightGBM  ...  0.999788  0.999666
+2  Air Quality                      CatBoost  ...  0.999979  0.999919
+3  Air Quality                   GBRegressor  ...  0.999959  0.999845
