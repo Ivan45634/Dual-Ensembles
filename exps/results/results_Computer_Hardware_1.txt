@@ -1,0 +1,31 @@
+Best hyperparameters for BoostingElementaryPredicates on Computer_Hardware_1: {'num_iter': 600, 'max_cov': 500, 'm': 3, 'learning_rate': 0.1}BoostingElementaryPredicates Results:
+Train RMSE: 27.169949668339537
+Test RMSE: 89.73026794956873
+Train R2: 0.9616006634001608
+Test R2: 0.8596029430202142
+-----------------------------------
+Best hyperparameters for LightGBM on Computer_Hardware_1: {'num_leaves': 10, 'max_depth': 4, 'learning_rate': 0.1}LightGBM Results:
+Train RMSE: 65.58208337993167
+Test RMSE: 161.70988299499987
+Train R2: 0.7762739929497614
+Test R2: 0.5440122236937404
+-----------------------------------
+Best hyperparameters for CatBoost on Computer_Hardware_1: {'score_function': 'Cosine', 'learning_rate': 0.1, 'grow_policy': 'SymmetricTree', 'depth': 3}CatBoost Results:
+Train RMSE: 9.793949783400224
+Test RMSE: 94.03701749176581
+Train R2: 0.9950104451695992
+Test R2: 0.8458023454713275
+-----------------------------------
+Best hyperparameters for GBRegressor on Computer_Hardware_1: {'n_estimators': 100, 'max_depth': 3}GBRegressor Results:
+Train RMSE: 13.695856346171114
+Test RMSE: 74.9648751228858
+Train R2: 0.9902428172833849
+Test R2: 0.9020068499276754
+-----------------------------------
+
+Summary Results:
+            Dataset                        Model  Train RMSE  Test RMSE  Train R2  Test R2
+Computer_Hardware_1 BoostingElementaryPredicates   27.169950  89.730268  0.961601 0.859603
+Computer_Hardware_1                     LightGBM   65.582083 161.709883  0.776274 0.544012
+Computer_Hardware_1                     CatBoost    9.793950  94.037017  0.995010 0.845802
+Computer_Hardware_1                  GBRegressor   13.695856  74.964875  0.990243 0.902007

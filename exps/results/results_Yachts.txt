@@ -1,0 +1,31 @@
+Best hyperparameters for BoostingElementaryPredicates on Yachts: {'num_iter': 375, 'max_cov': 500, 'm': 15, 'learning_rate': 0.1}BoostingElementaryPredicates Results:
+Train RMSE: 1.9098577159963612
+Test RMSE: 1.8460977676898902
+Train R2: 0.9851506947330103
+Test R2: 0.9795849444973777
+-----------------------------------
+Best hyperparameters for LightGBM on Yachts: {'num_leaves': 2, 'max_depth': 3, 'learning_rate': 0.1}LightGBM Results:
+Train RMSE: 3.797223570896254
+Test RMSE: 2.682712615349185
+Train R2: 0.9413002239538191
+Test R2: 0.9568888633205906
+-----------------------------------
+Best hyperparameters for CatBoost on Yachts: {'score_function': 'L2', 'learning_rate': 0.1, 'grow_policy': 'SymmetricTree', 'depth': 5}CatBoost Results:
+Train RMSE: 0.014867971296830283
+Test RMSE: 0.19470764257312587
+Train R2: 0.9999991000724731
+Test R2: 0.9997729052115285
+-----------------------------------
+Best hyperparameters for GBRegressor on Yachts: {'n_estimators': 300, 'max_depth': 3}GBRegressor Results:
+Train RMSE: 0.11900018559462666
+Test RMSE: 0.21448739617936086
+Train R2: 0.9999423499901726
+Test R2: 0.9997244218852641
+-----------------------------------
+
+Summary Results:
+Dataset                        Model  Train RMSE  Test RMSE  Train R2  Test R2
+ Yachts BoostingElementaryPredicates    1.909858   1.846098  0.985151 0.979585
+ Yachts                     LightGBM    3.797224   2.682713  0.941300 0.956889
+ Yachts                     CatBoost    0.014868   0.194708  0.999999 0.999773
+ Yachts                  GBRegressor    0.119000   0.214487  0.999942 0.999724

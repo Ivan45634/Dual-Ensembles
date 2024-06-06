@@ -1,0 +1,31 @@
+Best hyperparameters for BoostingElementaryPredicates on Neor_him_meh_2: {'num_iter': 1122, 'max_cov': 500, 'm': 6, 'learning_rate': 0.1}BoostingElementaryPredicates Results:
+Train RMSE: 7.187970920795923
+Test RMSE: 5.638893014098166
+Train R2: 0.7678221014794457
+Test R2: 0.8180168030352829
+-----------------------------------
+Best hyperparameters for LightGBM on Neor_him_meh_2: {'num_leaves': 10, 'max_depth': 6, 'learning_rate': 0.1}LightGBM Results:
+Train RMSE: 4.812092691092198
+Test RMSE: 3.560083405015733
+Train R2: 0.8959418210368337
+Test R2: 0.9274622758182735
+-----------------------------------
+Best hyperparameters for CatBoost on Neor_him_meh_2: {'score_function': 'Cosine', 'learning_rate': 0.1, 'grow_policy': 'SymmetricTree', 'depth': 3}CatBoost Results:
+Train RMSE: 2.7783129198400913
+Test RMSE: 3.554894862592829
+Train R2: 0.9653126941197868
+Test R2: 0.9276735578333892
+-----------------------------------
+Best hyperparameters for GBRegressor on Neor_him_meh_2: {'n_estimators': 100, 'max_depth': 5}GBRegressor Results:
+Train RMSE: 2.752544833167079
+Test RMSE: 3.575515992585336
+Train R2: 0.9659531407054877
+Test R2: 0.9268320259108045
+-----------------------------------
+
+Summary Results:
+       Dataset                        Model  Train RMSE  Test RMSE  Train R2  Test R2
+Neor_him_meh_2 BoostingElementaryPredicates    7.187971   5.638893  0.767822 0.818017
+Neor_him_meh_2                     LightGBM    4.812093   3.560083  0.895942 0.927462
+Neor_him_meh_2                     CatBoost    2.778313   3.554895  0.965313 0.927674
+Neor_him_meh_2                  GBRegressor    2.752545   3.575516  0.965953 0.926832

@@ -1,0 +1,24 @@
+# Requirements
+# Usage: pip install -r requirements.txt
+
+cachetools==5.3.1
+future==0.18.3
+h5py==3.9.0
+importlib-metadata==6.8.0
+Markdown==3.4.4
+matplotlib==3.7.2
+numpy==1.25.1
+pandas==2.0.3
+pycodestyle==2.10.0
+pyparsing==3.0.9
+python-dateutil==2.8.2
+pytz==2023.3
+scipy==1.11.1
+seaborn==0.12.2
+scikit-learn==1.2.2
+lightgbm==4.3.0
+catboost==1.2.3 #pip install catboost or conda install -c conda-forge catboost (using Anaconda or Miniconda)
+joblib==1.2.0
+tomli==2.0.1
+tqdm==4.65.0
+typing_extensions==4.7.1

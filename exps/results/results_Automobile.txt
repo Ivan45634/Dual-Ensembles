@@ -1,0 +1,23 @@
+Best hyperparameters for BoostingElementaryPredicates on Automobile: {'num_iter': 300, 'max_cov': 500, 'm': 5, 'learning_rate': 0.1}BoostingElementaryPredicates Results:
+Train RMSE: 1244.2990109075292
+Test RMSE: 1811.7251960134727
+Train R2: 0.9660660868264543
+Test R2: 0.9668593197463657
+-----------------------------------
+Best hyperparameters for LightGBM on Automobile: {'num_leaves': 10, 'max_depth': 4, 'learning_rate': 0.1}LightGBM Results:
+Train RMSE: 1732.5368780777699
+Test RMSE: 3596.0977464630687
+Train R2: 0.9342115873725666
+Test R2: 0.8694310997961823
+-----------------------------------
+Best hyperparameters for CatBoost on Automobile: {'score_function': 'Cosine', 'learning_rate': 0.1, 'grow_policy': 'SymmetricTree', 'depth': 3}CatBoost Results:
+Train RMSE: 297.46179107625096
+Test RMSE: 2516.8303055591355
+Train R2: 0.998060691907853
+Test R2: 0.9360435072773408
+-----------------------------------
+ValueError: Input X contains NaN.
+GradientBoostingRegressor does not accept missing values encoded as NaN natively. 
+For supervised learning, you might want to consider
+sklearn.ensemble.HistGradientBoostingClassifier and 
+Regressor which accept missing values encoded as NaNs natively. 
